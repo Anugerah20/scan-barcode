@@ -26,7 +26,7 @@
       <div class="parent-input">
 
          <form action="" method="POST">
-            <input type="text" name="barcode" class="input-scan" placeholder="Send Link You" required>
+            <input type="text" name="barcode" class="input-scan" placeholder="Send Link You">
 
             <button type="submit" name="submit" class="btn-send">Generate QR</button>
          </form>
