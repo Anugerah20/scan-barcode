@@ -1,0 +1,54 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Mulish', sans-serif;
+   box-sizing: border-box;
+}
+
+.container {
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   margin: 3%;
+}
+
+.text-center {
+   text-align: center;
+   font-size: 25px;
+   font-weight: 800;
+   color: #000;
+}
+
+.text-center > .text-qr {
+   color: rgb(34, 104, 202);
+}
+
+.parent-input {
+   max-width: 600px;
+   margin: 3% auto;
+}
+
+input[type="text"] {
+   display: block;
+   padding: 4px 8px;
+   outline: none;
+   width: 280px;
+   margin-bottom: 5%;
+   border: 2px solid #eaeaea;
+   border-radius: 3px;
+}
+
+ .parent-input > form > .btn-send {
+   padding: 4px 8px;
+   border: none;
+   background: rgb(34, 104, 202);
+   color: #fff;
+   border-radius: 3px;
+   cursor: pointer;
+   transform: 0.5s ease-in-out;
+}
+
+.btn-send:focus {
+   background: rgb(21, 75, 150);
+}
