@@ -37,9 +37,9 @@
       <?php
       include "phpqrcode/qrlib.php";
 
-      $temp = "temp/";
-      if (!file_exists($temp))
-         mkdir($temp);
+      $tempdir = "temp/";
+      if (!file_exists($tempdir))
+         mkdir($tempdir);
 
       if (isset($_POST["submit"])) {
          $text = $_POST["barcode"];
@@ -49,9 +49,9 @@
          $quality   = 'H'; // L (low), M (Medium), Q (Good), H (Height)
          $size     = 10;
          $padding   = 0;
-         QRCode::png($body_text, $temp . $namefile, $quality, $size, $padding);
+         QRCode::png($body_text, $tempdir.$namefile,$quality,$size,$padding);
 
-         echo '<img src="temp/' . $namefile . '">';
+         echo '<img class="img-responsive" src="temp/' . $namefile . '">';
       }
       ?>
    </div>
